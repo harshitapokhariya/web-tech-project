@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Self Modifying Page</title>
+</head>
+<body>
+
+<h1 id="text">Welcome</h1>
+
+<script>
+setInterval(function(){
+document.body.style.backgroundColor='#'+Math.floor(Math.random()*16777215).toString(16);
+document.getElementById('text').innerHTML='Updated '+new Date().toLocaleTimeString();
+},3000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Phone Split</title>
+</head>
+<body>
+
+<input type="text" id="phone" placeholder="+91-9876543210">
+<button onclick="splitPhone()">Split</button>
+
+<p id="result"></p>
+
+<script>
+function splitPhone(){
+let phone=document.getElementById('phone').value;
+let parts=phone.split('-');
+document.getElementById('result').innerHTML='Code: '+parts[0]+' Number: '+parts[1];
+}
+</script>
+
+</body>
+</html>

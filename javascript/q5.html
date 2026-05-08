@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vowel and Reverse</title>
+</head>
+<body>
+
+<input type="text" id="text">
+<button onclick="check()">Check</button>
+
+<p id="res"></p>
+
+<script>
+function check(){
+let s=document.getElementById('text').value;
+let rev=s.split('').reverse().join('');
+document.getElementById('res').innerHTML='Reverse: '+rev;
+}
+</script>
+
+</body>
+</html>
